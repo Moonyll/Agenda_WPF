@@ -1,0 +1,41 @@
+﻿<Page x:Class="Agenda_WPF.addBroker"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Agenda_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="addBroker" Background="#FF0099FF" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid Margin="10">
+        <!--Définition des colonnes-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <!--Définition des lignes-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" Grid.Row="0" Margin="2" FontWeight="Bold">Nom</Label>
+        <TextBox Name="LastName" Grid.Column="1" Grid.Row="0" Margin="2" TextAlignment="Center"/>
+        <Label Grid.Column="0" Grid.Row="1" Margin="2" FontWeight="Bold">Prénom</Label>
+        <TextBox Name="FirstName" Grid.Column="1" Grid.Row="1" Margin="2" TextAlignment="Center"/>
+        <Label Grid.Column="0" Grid.Row="2" Margin="2" FontWeight="Bold">E-Mail</Label>
+        <TextBox  Name="Mail" Grid.Column="1" Grid.Row="2" Margin="2" TextAlignment="Center"/>
+        <Label Grid.Column="0" Grid.Row="3" Margin="2" FontWeight="Bold">Téléphone</Label>
+        <TextBox Name="PhoneNumber" Grid.Column="1" Grid.Row="3" Margin="2" TextAlignment="Center"/>
+        <!--<Label Grid.Column="0" Grid.Row="4" Margin="2" FontWeight="Bold">Budget</Label>-->
+        <!--<TextBox Name="Budget" Grid.Column="1" Grid.Row="4" Margin="2" TextAlignment="Center"/>-->
+        <!--<Label Grid.Column="0" Grid.Row="5" Margin="2" FontWeight="Bold" Height="50">Sujet</Label>-->
+        <!--<TextBox Name="Subject" Grid.Column="1" Grid.Row="5" Margin="2" TextAlignment="Center"/>-->
+        <Button Grid.Column="0" Grid.Row="6" Content="Annuler" Margin="7" Click="Return"/>
+        <Button Grid.Column="1" Grid.Row="6" Content="Enregister" Margin="7" Click="AddBrok"/>
+    </Grid>
+</Page>
