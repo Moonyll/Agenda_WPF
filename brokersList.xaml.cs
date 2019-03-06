@@ -212,6 +212,7 @@ namespace Agenda_WPF
                 //Budget.Text = "";
                 //Subject.Text = "";
                 MessageBox.Show("Le client a bien été mis à jour");
+                listing_brok.Items.Refresh();
             }
             else
             {
@@ -230,6 +231,9 @@ namespace Agenda_WPF
             db.SaveChanges();
 
             MessageBox.Show("Le client a bien été supprimé");
+            // Updating List
+            listing_brok.ItemsSource = null;
+            listing_brok.ItemsSource = db.Brokers.ToList();
         }
     }
 }

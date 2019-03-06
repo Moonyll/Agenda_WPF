@@ -1,0 +1,36 @@
+﻿<Page x:Class="Agenda_WPF.addAppointment"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Agenda_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="addAppointment" Loaded="Combo">
+    <Grid>
+        <StackPanel Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Courtier</TextBlock>
+            <ComboBox x:Name="Broker_Choice" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding LastName}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top">Client</TextBlock>
+            <ComboBox Name="Customer_Choice" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding LastName}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <DatePicker Height="25" HorizontalAlignment="Center" x:Name="datePicker" Width="115" VerticalAlignment="Center" />
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Heure</Label>
+            <TextBox Name="Hour" Text="{Binding Date, StringFormat=hh}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50"/>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Minutes</Label>
+            <TextBox Name="Minutes" Text="{Binding Date, StringFormat=mm}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50"/>
+            <Button Content="Ajouter Rdv" Margin="7" Click="addingApp"/>
+        </StackPanel>
+    </Grid>
+</Page>

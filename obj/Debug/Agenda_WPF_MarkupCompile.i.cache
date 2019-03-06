@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Dell\Documents\Exos\WPF\Agenda_WPF\Agenda_WPF\Agenda_WPF\App.xaml
-5-1858879920
+7-254427884
 
-17-1682673496
+19-120034692
 18799391354
-addBroker.xaml;addCustomer.xaml;brokersList.xaml;customersList.xaml;MainWindow.xaml;
+addAppointment.xaml;addBroker.xaml;addCustomer.xaml;appointmentsList.xaml;brokersList.xaml;customersList.xaml;MainWindow.xaml;
 
-True
+False
 

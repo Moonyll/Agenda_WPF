@@ -44,6 +44,14 @@ namespace Agenda_WPF
         {
             Main.Content = new brokersList();
         }
+        private void AddingApp(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new addAppointment();
+        }
+        private void ListingApp(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new appointmentsList();
+        }
     }
 
 }

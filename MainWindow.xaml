@@ -24,6 +24,13 @@
                     <Separator />
                     <MenuItem Header="_Exit" />
                 </MenuItem>
+                <!--Menu Rendez-Vous-->
+                <MenuItem Header="_Rendez-Vous">
+                    <MenuItem Header="_Ajouter un rendez-vous" Click="AddingApp"/>
+                    <MenuItem Header="_Liste des rendez-vous" Click="ListingApp" />
+                    <Separator />
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
             </Menu>
         </DockPanel>
         <Frame Name="Main" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,20,0,0" NavigationUIVisibility="Hidden"/>
