@@ -58,6 +58,11 @@ namespace Agenda_WPF
         {
             Main.Content = new appointmentsList();
         }
+
+        private void Home(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Accueil();
+        }
     }
 
 }

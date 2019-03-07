@@ -20,7 +20,7 @@
             <DataGrid AutoGenerateColumns="False" x:Name="listing" MouseDoubleClick="Details">
                 <DataGrid.Columns>
                     <!--<DataGridTextColumn Header="id" Binding="{Binding idCustomer}" />-->
-                    <DataGridTextColumn Header="Nom" Binding="{Binding LastName}" />
+                    <DataGridTextColumn Header="Nom" Binding="{Binding LastName}" Foreground="#FFDE5555" />
                     <DataGridTextColumn Header="Prénom" Binding="{Binding FirstName}"/>
                     <DataGridTextColumn Header="Adresse Mail" Binding="{Binding Mail}"/>
                     <DataGridTextColumn Header="Téléphone" Binding="{Binding PhoneNumber}"/>

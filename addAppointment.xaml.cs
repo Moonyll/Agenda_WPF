@@ -31,9 +31,7 @@ namespace Agenda_WPF
         string selected_hour;
         string selected_minute;
         string rdv_date;
-        string b, c;
-
-
+       
         public addAppointment()
         {
             InitializeComponent();
@@ -64,6 +62,8 @@ namespace Agenda_WPF
             //
             db.Appointments.Add(new_appointment);
             db.SaveChanges();
+            //
+            MessageBox.Show("Le rendez-vous a bien été ajouté");
         }
     }
 }

@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="addCustomer" Background="#FF0099FF" HorizontalAlignment="Center" VerticalAlignment="Center">
-    <Grid Margin="10">
+    <Grid Margin="3" Background="#FF1F50B9">
         <!--Définition des colonnes-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -23,19 +23,19 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <Label Grid.Column="0" Grid.Row="0" Margin="2" FontWeight="Bold">Nom</Label>
+        <Label Grid.Column="0" Grid.Row="0" Margin="2" FontWeight="Bold" Foreground="White">Nom</Label>
         <TextBox Name="LastName" Grid.Column="1" Grid.Row="0" Margin="2" TextAlignment="Center"/>
-        <Label Grid.Column="0" Grid.Row="1" Margin="2" FontWeight="Bold">Prénom</Label>
+        <Label Grid.Column="0" Grid.Row="1" Margin="2" FontWeight="Bold" Foreground="White">Prénom</Label>
         <TextBox Name="FirstName" Grid.Column="1" Grid.Row="1" Margin="2" TextAlignment="Center"/>
-        <Label Grid.Column="0" Grid.Row="2" Margin="2" FontWeight="Bold">E-Mail</Label>
+        <Label Grid.Column="0" Grid.Row="2" Margin="2" FontWeight="Bold" Foreground="White">E-Mail</Label>
         <TextBox  Name="Mail" Grid.Column="1" Grid.Row="2" Margin="2" TextAlignment="Center"/>
-        <Label Grid.Column="0" Grid.Row="3" Margin="2" FontWeight="Bold">Téléphone</Label>
+        <Label Grid.Column="0" Grid.Row="3" Margin="2" FontWeight="Bold" Foreground="White">Téléphone</Label>
         <TextBox Name="PhoneNumber" Grid.Column="1" Grid.Row="3" Margin="2" TextAlignment="Center"/>
-        <Label Grid.Column="0" Grid.Row="4" Margin="2" FontWeight="Bold">Budget</Label>
+        <Label Grid.Column="0" Grid.Row="4" Margin="2" FontWeight="Bold" Foreground="White">Budget</Label>
         <TextBox Name="Budget" Grid.Column="1" Grid.Row="4" Margin="2" TextAlignment="Center"/>
-        <Label Grid.Column="0" Grid.Row="5" Margin="2" FontWeight="Bold" Height="50">Sujet</Label>
+        <Label Grid.Column="0" Grid.Row="5" Margin="2" FontWeight="Bold" Height="50" Foreground="White">Sujet</Label>
         <TextBox Name="Subject" Grid.Column="1" Grid.Row="5" Margin="2" TextAlignment="Center"/>
-        <Button Grid.Column="0" Grid.Row="6" Content="Annuler" Margin="7" Click="Return"/>
-        <Button Grid.Column="1" Grid.Row="6" Content="Enregister" Margin="7" Click="AddCust"/>
+        <Button Grid.Column="0" Grid.Row="6" Content="Annuler" Margin="7" Click="Return" Background="#FFF0888C"/>
+        <Button Grid.Column="1" Grid.Row="6" Content="Enregister" Margin="7" Click="AddCust" Background="#FF20E0D7"/>
     </Grid>
 </Page>

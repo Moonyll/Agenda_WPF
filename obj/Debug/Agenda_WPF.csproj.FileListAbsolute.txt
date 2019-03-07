@@ -31,3 +31,5 @@ C:\Users\Dell\Documents\Exos\WPF\Agenda_WPF\Agenda_WPF\Agenda_WPF\obj\Debug\addA
 C:\Users\Dell\Documents\Exos\WPF\Agenda_WPF\Agenda_WPF\Agenda_WPF\obj\Debug\addAppointment.baml
 C:\Users\Dell\Documents\Exos\WPF\Agenda_WPF\Agenda_WPF\Agenda_WPF\obj\Debug\appointmentsList.g.cs
 C:\Users\Dell\Documents\Exos\WPF\Agenda_WPF\Agenda_WPF\Agenda_WPF\obj\Debug\appointmentsList.baml
+C:\Users\Dell\Documents\Exos\WPF\Agenda_WPF\Agenda_WPF\Agenda_WPF\obj\Debug\Accueil.g.cs
+C:\Users\Dell\Documents\Exos\WPF\Agenda_WPF\Agenda_WPF\Agenda_WPF\obj\Debug\Accueil.baml
