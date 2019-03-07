@@ -31,6 +31,7 @@ namespace Agenda_WPF
         string selected_hour;
         string selected_minute;
         string rdv_date;
+        string b, c;
 
 
         public addAppointment()
@@ -47,14 +48,14 @@ namespace Agenda_WPF
         }
         private void addingApp(object sender, RoutedEventArgs e)
         {
-            //
-            selected_broker.LastName = Broker_Choice.SelectedValue.ToString();
-            selected_customer.LastName = Customer_Choice.SelectedValue.ToString();
-            //
+                        
+            selected_broker.idBroker = Convert.ToInt32(Broker_Choice.SelectedValue);
+            selected_customer.idCustomer = Convert.ToInt32(Customer_Choice.SelectedValue);
+
             selected_date = datePicker.Text;
             selected_hour = Hour.Text;
             selected_minute = Minutes.Text;
-            rdv_date = selected_date+selected_hour+selected_minute;
+            rdv_date = selected_date +" "+ selected_hour +":"+ selected_minute;
             //
             new_appointment.DateHour = Convert.ToDateTime(rdv_date);
             //

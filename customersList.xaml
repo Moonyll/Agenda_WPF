@@ -49,6 +49,7 @@
             </Grid.RowDefinitions>
             <Label Grid.Column="0" Grid.Row="0" Margin="2" FontWeight="Bold">Nom</Label>
             <TextBox Name="LastName" Grid.Column="1" Grid.Row="0" Margin="2" TextAlignment="Center"/>
+            <!--<TextBox Name="TextBox_LastName" Grid.Column="1" Grid.Row="0" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing, Path=SelectedItem.LastName,Mode=TwoWay}"/>-->
             <Label Grid.Column="0" Grid.Row="1" Margin="2" FontWeight="Bold">Prénom</Label>
             <TextBox Name="FirstName" Grid.Column="1" Grid.Row="1" Margin="2" TextAlignment="Center"/>
             <Label Grid.Column="0" Grid.Row="2" Margin="2" FontWeight="Bold">E-Mail</Label>

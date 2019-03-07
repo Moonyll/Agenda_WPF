@@ -10,21 +10,9 @@
     <Grid>
         <StackPanel Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Courtier</TextBlock>
-            <ComboBox x:Name="Broker_Choice" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding LastName}"/>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
+            <ComboBox x:Name="Broker_Choice" DisplayMemberPath="LastName" SelectedValuePath="idBroker" />
             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top">Client</TextBlock>
-            <ComboBox Name="Customer_Choice" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding LastName}"/>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
+            <ComboBox x:Name="Customer_Choice" DisplayMemberPath="LastName" SelectedValuePath="idCustomer" />
             <DatePicker Height="25" HorizontalAlignment="Center" x:Name="datePicker" Width="115" VerticalAlignment="Center" />
             <Label HorizontalAlignment="Center" VerticalAlignment="Center">Heure</Label>
             <TextBox Name="Hour" Text="{Binding Date, StringFormat=hh}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50"/>

@@ -14,6 +14,7 @@
                 <MenuItem Header="_Clients">
                     <MenuItem Header="_Ajouter un client" Click="AddingCust"/>
                     <MenuItem Header="_Liste des clients" Click="ListingCust" />
+                    <!--<MenuItem x:Name="ListCustomers" Header="_Liste des clients" Click="MenuItem_Click"/> Autre méthode-->
                     <Separator />
                     <MenuItem Header="_Exit" />
                 </MenuItem>

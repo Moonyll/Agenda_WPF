@@ -22,23 +22,29 @@ namespace Agenda_WPF
     {
         public MainWindow()
         {
-        InitializeComponent();
-        //Window.Source = new Uri("customersList.xaml", UriKind.RelativeOrAbsolute);
+            InitializeComponent();
+            //Window.Source = new Uri("customersList.xaml", UriKind.RelativeOrAbsolute);
         }
-       
+
         private void AddingCust(object sender, RoutedEventArgs e)
         {
-        Main.Content = new addCustomer();
+            Main.Content = new addCustomer();
         }
 
         private void ListingCust(object sender, RoutedEventArgs e)
         {
-        Main.Content = new customersList();
+            Main.Content = new customersList();
         }
         private void AddingBrok(object sender, RoutedEventArgs e)
         {
             Main.Content = new addBroker();
         }
+        // Autre méthode :
+        //private void MenuItem_Click(object sender, RoutedEventArgs e)
+        //{
+        //    string clickedMenuItem = (sender as MenuItem).Name;
+        //    Main.Source = new Uri(clickedMenuItem + ".xaml", UriKind.Relative);
+        //}
 
         private void ListingBrok(object sender, RoutedEventArgs e)
         {

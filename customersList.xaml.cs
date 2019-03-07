@@ -55,13 +55,14 @@ namespace Agenda_WPF
             if (listing.SelectedItem == null) return;
             customer = listing.SelectedItem as Customer;
             idtodel = customer.idCustomer;// Si on veut supprimer ce client
-
+            //Détails
             LastName.Text = customer.LastName;
             FirstName.Text = customer.FirstName;
             Mail.Text = customer.Mail;
             PhoneNumber.Text = customer.PhoneNumber;
             Budget.Text = customer.Budget.ToString();
             Subject.Text = customer.Subject;
+            
         }
         private void UpdateCust(object sender, RoutedEventArgs e)
         {
