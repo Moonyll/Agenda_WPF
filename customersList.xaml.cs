@@ -192,15 +192,7 @@ namespace Agenda_WPF
                 isValid = false;
                 error++;
             }
-            //// Enregistrement
-            //customer.LastName = LastName.Text;
-            //customer.FirstName = FirstName.Text;
-            //customer.Mail = Mail.Text;
-            //customer.PhoneNumber = PhoneNumber.Text;
-            //customer.Budget = int.Parse(Budget.Text);
-            //customer.Subject = Subject.Text;
-            ////
-            ///
+            
             //SAUVEGARDE ET RESET
             if (isValid == true)
             {
@@ -219,10 +211,7 @@ namespace Agenda_WPF
             {
                 MessageBox.Show("Vous avez " + error + " Erreur(s)");
             }
-            //db.Entry(customer).State = EntityState.Modified;
-            //db.SaveChanges();
-            //
-            //MessageBox.Show("Le client a bien été mis à jour");
+         
         }
         private void DelCust(object sender, RoutedEventArgs e)
         {

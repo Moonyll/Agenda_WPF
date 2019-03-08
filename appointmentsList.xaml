@@ -17,7 +17,7 @@
                 <MouseBinding Gesture="LeftDoubleClick" Command="{Binding Details}" />
             </Grid.InputBindings>
             <!--<DataGrid Name="listing"/>-->
-            <DataGrid AutoGenerateColumns="False" x:Name="listing_app">
+            <DataGrid AutoGenerateColumns="False" x:Name="listing_app" Foreground="#FF1138BB">
                 <!--MouseDoubleClick="Details"-->
                 <DataGrid.Columns>
                     <!--<DataGridTextColumn Header="id" Binding="{Binding idBroker}" />-->
@@ -54,23 +54,24 @@
             <!--<TextBox Name="TextBox_LastName" Grid.Column="1" Grid.Row="0" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing, Path=SelectedItem.LastName,Mode=TwoWay}"/>-->
             <Label Grid.Column="0" Grid.Row="1" Margin="2" FontWeight="Bold">Client</Label>
             <TextBox Name="App_Customer" Grid.Column="1" Grid.Row="1" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing_app, Path=SelectedItem.Customer.LastName,Mode=TwoWay}"/>
+            <!--Rdv-->
             <Label Grid.Column="0" Grid.Row="2" Margin="2" FontWeight="Bold">Date du Rdv</Label>
-            <DatePicker  Name="App_Date" Grid.Column="1" Grid.Row="2" Margin="2" Text="{Binding ElementName=listing_app, Path=SelectedItem.DateHour,Mode=TwoWay}"/>
-            <Label Grid.Column="0" Grid.Row="3" Margin="2" FontWeight="Bold">Sujet du Rdv</Label>
-            <TextBox Name="App_Subject" Grid.Column="1" Grid.Row="3" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing_app, Path=SelectedItem.Customer.Subject,Mode=TwoWay}"/>
-            <!--id-->
-            <TextBox  Name="App_id" Grid.Column="1" Grid.Row="4" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing_app, Path=SelectedItem.idAppointment,Mode=TwoWay}" Visibility="Hidden"/>
-            <TextBox  Name="App_idBrok" Grid.Column="1" Grid.Row="5" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing_app, Path=SelectedItem.idBroker,Mode=TwoWay}" Visibility="Hidden"/>
-            <TextBox  Name="App_idCust" Grid.Column="1" Grid.Row="6" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing_app, Path=SelectedItem.idCustomer,Mode=TwoWay}" Visibility="Hidden"/>
-            <Button Grid.Column="0" Grid.Row="6" Content="Supprimer" Margin="10,47,4,-33" Click="DelApp"/>
-            <Button Grid.Column="1" Grid.Row="6" Content="Mis à jour" Margin="10,47,4,-33" Click="UpdateApp"/>
+            <DatePicker  Name="App_Date" Grid.Column="1" Grid.Row="2" Margin="2"/>
+            <Label HorizontalAlignment="Center" Grid.Column="0" Grid.Row="3" VerticalAlignment="Center">Heure</Label>
+            <TextBox Name="App_Hour" Grid.Column="1" Grid.Row="3" Text="{Binding Date, StringFormat=hh}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50"/>
+            <Label HorizontalAlignment="Center"  Grid.Column="0" Grid.Row="5" VerticalAlignment="Center">Minutes</Label>
+            <TextBox Name="App_Minutes" Grid.Column="1" Grid.Row="5" Text="{Binding Date, StringFormat=mm}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50"/>
+            <!--Subject-->
+            <!--<Label Grid.Column="0" Grid.Row="7" Margin="2" FontWeight="Bold">Sujet du Rdv</Label>-->
+            <!--<TextBox Name="App_Subject" Grid.Column="1" Grid.Row="8" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing_app, Path=SelectedItem.Customer.Subject,Mode=TwoWay}"/>
+            --><!--id-->
+            <TextBox  Name="App_id" Grid.Column="1" Grid.Row="5" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing_app, Path=SelectedItem.idAppointment,Mode=TwoWay}" Visibility="Hidden"/>
+            <TextBox  Name="App_idBrok" Grid.Column="1" Grid.Row="6" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing_app, Path=SelectedItem.idBroker,Mode=TwoWay}" Visibility="Hidden"/>
+            <TextBox  Name="App_idCust" Grid.Column="1" Grid.Row="7" Margin="2" TextAlignment="Center" Text="{Binding ElementName=listing_app, Path=SelectedItem.idCustomer,Mode=TwoWay}" Visibility="Hidden"/>
+            <Button Grid.Column="0" Grid.Row="9" Content="Supprimer" Margin="10,47,4,-33" Click="DelApp"/>
+            <Button Grid.Column="1" Grid.Row="9" Content="Mis à jour" Margin="10,47,4,-33" Click="UpdateApp"/>
         </Grid>
         <!--Fin du formulaire de mise à jour-->
-        <!--<StackPanel Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Courtier</TextBlock>
-            <ComboBox x:Name="Broker_Choice" DisplayMemberPath="LastName" SelectedValuePath="idBroker" />
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top">Client</TextBlock>
-            <ComboBox x:Name="Customer_Choice" DisplayMemberPath="LastName" SelectedValuePath="idCustomer" />
-        </StackPanel>-->
+      
     </StackPanel>
 </Page>

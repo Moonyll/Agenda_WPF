@@ -17,7 +17,7 @@
                 <MouseBinding Gesture="LeftDoubleClick" Command="{Binding Details}" />
             </Grid.InputBindings>
             <!--<DataGrid Name="listing"/>-->
-            <DataGrid AutoGenerateColumns="False" x:Name="listing_brok" MouseDoubleClick="Details">
+            <DataGrid AutoGenerateColumns="False" x:Name="listing_brok" MouseDoubleClick="Details" Foreground="#FF1138BB">
                 <DataGrid.Columns>
                     <!--<DataGridTextColumn Header="id" Binding="{Binding idBroker}" />-->
                     <DataGridTextColumn Header="Nom" Binding="{Binding LastName}" />

@@ -17,10 +17,10 @@
                 <MouseBinding Gesture="LeftDoubleClick" Command="{Binding Details}" />
             </Grid.InputBindings>
             <!--<DataGrid Name="listing"/>-->
-            <DataGrid AutoGenerateColumns="False" x:Name="listing" MouseDoubleClick="Details">
+            <DataGrid AutoGenerateColumns="False" x:Name="listing" MouseDoubleClick="Details" Foreground="#FF1138BB">
                 <DataGrid.Columns>
                     <!--<DataGridTextColumn Header="id" Binding="{Binding idCustomer}" />-->
-                    <DataGridTextColumn Header="Nom" Binding="{Binding LastName}" Foreground="#FFDE5555" />
+                    <DataGridTextColumn Header="Nom" Binding="{Binding LastName}" />
                     <DataGridTextColumn Header="Prénom" Binding="{Binding FirstName}"/>
                     <DataGridTextColumn Header="Adresse Mail" Binding="{Binding Mail}"/>
                     <DataGridTextColumn Header="Téléphone" Binding="{Binding PhoneNumber}"/>
@@ -28,7 +28,6 @@
                     <DataGridTextColumn Header="Sujet" Binding="{Binding Subject}"/>
                 </DataGrid.Columns>
             </DataGrid>
-
         </Grid>
         <!--Formulaire de mis à jour-->
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="273" Width="225" Margin="10" Background="#FF00AEFF">

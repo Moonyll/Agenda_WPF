@@ -43,6 +43,15 @@ namespace Agenda_WPF
         {
             Broker_Choice.ItemsSource = db.Brokers.ToList();
             Customer_Choice.ItemsSource = db.Customers.ToList();
+            //
+            for (int i = 7; i < 19; i++)
+            {
+                Hour.Items.Add(i.ToString()); // Hour est le nom de la combo box
+            }
+            for (int j = 1; j <= 11; j++)
+            {
+                Minutes.Items.Add((5*j).ToString()); // Minutes est le nom de la combo box
+            }
         }
         private void addingApp(object sender, RoutedEventArgs e)
         {
@@ -64,6 +73,11 @@ namespace Agenda_WPF
             db.SaveChanges();
             //
             MessageBox.Show("Le rendez-vous a bien été ajouté");
+        }
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
         }
     }
 }

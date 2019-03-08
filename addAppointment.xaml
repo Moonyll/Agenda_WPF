@@ -6,19 +6,19 @@
       xmlns:local="clr-namespace:Agenda_WPF"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="addAppointment" Loaded="Combo">
-    <Grid>
-        <StackPanel Margin="10" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">Courtier</TextBlock>
-            <ComboBox x:Name="Broker_Choice" DisplayMemberPath="LastName" SelectedValuePath="idBroker" />
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top">Client</TextBlock>
-            <ComboBox x:Name="Customer_Choice" DisplayMemberPath="LastName" SelectedValuePath="idCustomer" />
-            <DatePicker Height="25" HorizontalAlignment="Center" x:Name="datePicker" Width="115" VerticalAlignment="Center" />
-            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Heure</Label>
-            <TextBox Name="Hour" Text="{Binding Date, StringFormat=hh}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50"/>
-            <Label HorizontalAlignment="Center" VerticalAlignment="Center">Minutes</Label>
-            <TextBox Name="Minutes" Text="{Binding Date, StringFormat=mm}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="50"/>
-            <Button Content="Ajouter Rdv" Margin="7" Click="addingApp"/>
+      Title="addAppointment" Loaded="Combo" Background="#FF1B7CA0">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Margin="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="auto">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF1AD1B8" Width="150" TextAlignment="Center" Height="25" FontSize="16" Foreground="White" Margin="0,3" FontWeight="Bold">Courtier</TextBlock>
+            <ComboBox x:Name="Broker_Choice" DisplayMemberPath="LastName" SelectedValuePath="idBroker" Background="#FF1AD1B8" Height="25" HorizontalContentAlignment="Center" Foreground="#FF131CE4" UseLayoutRounding="False" />
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FF2A41D3" Width="150" TextAlignment="Center" Height="25" FontSize="16" Foreground="White" Margin="0,3" FontWeight="Bold">Client</TextBlock>
+            <ComboBox x:Name="Customer_Choice" DisplayMemberPath="LastName" SelectedValuePath="idCustomer" Background="#FF2A41D3" Height="25" Margin="0,3" HorizontalContentAlignment="Center" />
+            <DatePicker Height="35" HorizontalAlignment="Center" x:Name="datePicker" Width="150" VerticalAlignment="Center" Margin="0,3" />
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Background="#FF20EEE4" FontSize="16" Margin="0,3" HorizontalContentAlignment="Center" Foreground="White" FontWeight="Bold">Heure</Label>
+            <ComboBox Name="Hour" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,3" PreviewTextInput="NumberValidationTextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FF2273D4" FontSize="14" FontWeight="Bold"/>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF20EEE4" FontSize="16" Margin="0,3" Width="150" HorizontalContentAlignment="Center" Foreground="White" FontWeight="Bold">Minutes</Label>
+            <ComboBox Name="Minutes" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Margin="0,3" PreviewTextInput="NumberValidationTextBox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FF2273D4" FontSize="14" FontWeight="Bold"/>
+            <Button Content="Ajouter Rdv" Margin="0,7" Click="addingApp" Foreground="White" Background="#FF296A70" Height="30" FontSize="16" FontWeight="Bold"/>
         </StackPanel>
     </Grid>
 </Page>

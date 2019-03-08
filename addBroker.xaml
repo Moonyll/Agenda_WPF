@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="addBroker" Background="#FF0099FF" HorizontalAlignment="Center" VerticalAlignment="Center">
-    <Grid Margin="3" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF1F50B9">
+    <Grid Margin="3" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF1F50B9" RenderTransformOrigin="0.5,0.5">
         <!--Définition des colonnes-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
